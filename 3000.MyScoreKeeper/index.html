@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="app.css">
+    <title>Scoore Keeper</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="columns center">
+            <!-- Primera columna (Jugador #1) -->
+            <div class="column is-one-third">
+                <span class="title is-1 is-spaced" id="p1Name">Player 1 <div id="wol1"></div> </span><br><br>
+                <input type="text" id="p1InputName" placeholder="Name Player 1"><br><br>
+                <figure class="image is-128x128">
+                    <img class="is-rounded imgCenter"
+                        src="https://cdn.realsport101.com/images/ncavvykf/epicstream/5de4dde1e39a25c8405551ed4ba903f1c6f04717-2300x1348.jpg?rect=0,26,2300,1295&w=700&h=394&dpr=2"
+                        alt="">
+                </figure>
+                <button class="button is-light" id="p1Button">+1 Player 1</button>
+            </div>
+
+            <!-- Segunda columna (Imagen VS, puntuacion y boton de reset) -->
+            <div class="column">
+                <figure class="image is-128x128 imgCenter vs">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Street_Fighter_VS_logo.png" alt="">
+                </figure>
+
+                <div class="title is-1"><span id="displayP1" class="points">0</span> - <span id="displayP2"
+                        class="points">0</span></div>
+                <label for="playto" class="label is-large is-inline">Playing To</label>
+                <div class="select is-rounded">
+                    <select name="" id="playto">
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                    </select>
+                </div> <br><br>
+
+                <button class="button is-danger" id="resetButton">Reset</button>
+            </div>
+
+            <!-- Tercera columna (Jugador #2) -->
+            <div class="column is-one-third">
+                <span class="title is-1 is-spaced" id="p2Name">Player 2 <div id="wol2"></div></span><br><br>
+                <input type="text" id="p2InputName" placeholder="Name Player 2"><br><br>
+                <figure class="image is-128x128">
+                    <img class="is-rounded imgCenter"
+                        src="https://m.media-amazon.com/images/M/MV5BNzkwYzYwMzQtOGM2MS00ZmRmLTg5OTQtYTQzNTc0OGVhMjBmXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg"
+                        alt="">
+                </figure>
+                <button class="button is-light" id="p2Button">+1 Player 2</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

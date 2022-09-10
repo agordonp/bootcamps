@@ -1,0 +1,24 @@
+div {
+    display: inline-block;
+    text-align: center;
+    border: 2px solid blue;
+    margin: 10px;
+    padding: auto;
+    border-radius: 5px;
+}
+
+img {
+    display: block;
+}
+
+h1{
+    text-align: center;
+    padding: 30px 30px;
+}
+
+div:hover {
+    background-image: linear-gradient(red, yellow);
+    transition: transform 1.5s, background-image 3s;
+    transform:rotateY(1turn);
+    box-shadow: 5px 5px rgb(78, 76, 76);
+}

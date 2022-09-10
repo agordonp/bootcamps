@@ -1,0 +1,36 @@
+.center{
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+div.column{
+    border: 1px solid black;
+}
+
+input{
+    text-align: center;
+}
+
+.imgCenter{
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+.vs{
+    margin-top: 25%;
+}
+
+.overtime {
+	font-weight: 900;
+	background-color: red !important;
+	color: white !important;
+}
+
+select {
+    transition: all 0.5s;
+  }
+
+  .points{
+      transition: 0.5s;
+  }

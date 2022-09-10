@@ -1,0 +1,18 @@
+section{
+    text-align: center;
+    border: 2px solid #14213d;
+    background-color: #457b9d;
+    margin-top: 15%;
+    border-radius: 5px;
+    padding: 50px;
+}
+
+div{
+    display: inline;
+}
+
+li{
+    text-align: center;
+    margin-right: 15%;
+    list-style-position: inside;
+}
