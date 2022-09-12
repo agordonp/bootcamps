@@ -35,13 +35,6 @@ const makeImages = (res) => {
   }
 };
 
-// const deleteImgs = () => {
-//   const imgs = document.querySelectorAll("img");
-//   for (let i = 0; i < imgs.length; i++) {
-//     imgs[i].remove();
-//   }
-// };
-
 const deleteImgs = () => {
   const imgs = document.querySelectorAll("img");
   for (let img of imgs) {
