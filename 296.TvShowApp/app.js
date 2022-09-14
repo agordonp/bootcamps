@@ -8,6 +8,7 @@ form.addEventListener("submit", async function (e) {
   form.elements.query.value = "";
   const config = { params: { q: searchTerm } };
   const res = await axios.get(`https://api.tvmaze.com/search/shows?`, config);
+  console.log(res.data);
   deleteImgs();
   makeImages(res.data);
 });
@@ -27,8 +28,12 @@ const makeImages = (res) => {
   for (let i = 0; i < res.length + 1; i++) {
     if (res[i].show.image) {
       const img = document.createElement("img");
+      const name = document.createElement("h4");
+      const div = document.createElement("div");
       img.src = res[i].show.image.medium;
-      document.body.append(img);
+      name.innerText = res[i].show.name;
+      div.append(img, name);
+      document.body.append(div);
     } else {
       console.log("No more shows!");
     }
@@ -36,8 +41,8 @@ const makeImages = (res) => {
 };
 
 const deleteImgs = () => {
-  const imgs = document.querySelectorAll("img");
-  for (let img of imgs) {
-    img.remove();
+  const divs = document.querySelectorAll("div");
+  for (let el of divs) {
+    el.remove();
   }
 };

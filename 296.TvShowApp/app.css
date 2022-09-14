@@ -1,0 +1,24 @@
+.container {
+  display: inline-block;
+  padding: 1.5% 0px 0px 1%;
+  margin: auto;
+}
+
+div {
+  display: inline-block;
+}
+
+div {
+  text-align: center;
+}
+
+img {
+  border-radius: 5px;
+  padding: 10px 0px 0px 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin: auto;
+  position: relative;
+}
