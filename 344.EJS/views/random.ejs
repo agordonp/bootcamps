@@ -1,23 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Random</title>
-  </head>
-  <body>
-    <h1>Your randome number is: <%= num %></h1>
+<%- include('partials/head')%> <%- include('partials/navbar') %>
+<h1>Your randome number is: <%= num %></h1>
 
-    <!-- Tambien con condicional ternario -->
-    <h3>That number is: <%= num % 2 === 0 ? 'EVEN' : 'ODD' %></h3>
-    <h3>The number is: <%= oddEven %></h3>
+<!-- Tambien con condicional ternario -->
+<h3>That number is: <%= num % 2 === 0 ? 'EVEN' : 'ODD' %></h3>
+<h3>The number is: <%= oddEven %></h3>
 
-    <!-- Tambien se pudo escribir la logica aca de la siguiente manera -->
-    <!-- <% if (num % 2 === 0) { %>
+<!-- Tambien se pudo escribir la logica aca de la siguiente manera -->
+<!-- <% if (num % 2 === 0) { %>
     <h3>The number is Even</h3>
     <% } else { %>
       <h3>The number is odd</h3>
       <% } %> -->
-  </body>
-</html>
+<%- include('partials/footer') %>
